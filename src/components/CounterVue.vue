@@ -15,15 +15,15 @@ export default {
             count: 0
         }
     },
-    setup() {
-        const vueSharedCounter = useStore(counterStore);
-        return { vueSharedCounter };
-    },
     methods: {
         increment() {
             this.count++
             incrementCounter()
         }
     },
+    setup() {
+        const vueSharedCounter = useStore(counterStore);
+        return { vueSharedCounter };
+    }
 }
 </script>
