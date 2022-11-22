@@ -1,12 +1,14 @@
 <template>
     <div>
         <button @click="increment(); incrementCounter();">
-            Vue State: {{count}} Shared State: {{vueSharedCounter}}</button>
+            Vue State: {{count}} Shared State: {{vueSharedCounter}}
+        </button>
     </div>
 </template>
 <script>
-import { counterStore, incrementCounter } from '../store/counterStore.js';
 import { useStore } from '@nanostores/vue';
+import { counterStore, incrementCounter } from '../store/counterStore.js';
+
 export default {
     data() {
         return {

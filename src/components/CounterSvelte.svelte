@@ -11,5 +11,6 @@
         increment();
         incrementCounter();
     }}>
-    Svelte State: {count} Shared State: {$counterStore} </button>
+        Svelte State: {count} Shared State: {$counterStore}
+    </button>
 </div>
