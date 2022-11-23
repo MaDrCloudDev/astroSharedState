@@ -2,7 +2,10 @@
 import CounterVue from "../components/CounterVue.vue";
 import CounterReact from "../components/CounterReact";
 import CounterSvelte from "../components/CounterSvelte.svelte";
+import Layout from "../layouts/Layout.astro";
 ---
-<CounterVue client:visible />
-<CounterReact client:visible />
-<CounterSvelte client:visible />
+<Layout>
+    <CounterVue client:visible />
+    <CounterReact client:visible />
+    <CounterSvelte client:visible />
+</Layout>

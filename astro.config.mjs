@@ -2,10 +2,10 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 import react from "@astrojs/react";
-import vue from "@astrojs/vue";
 import svelte from "@astrojs/svelte";
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), vue(), svelte()]
+  integrations: [react(), svelte(), vue()]
 });
