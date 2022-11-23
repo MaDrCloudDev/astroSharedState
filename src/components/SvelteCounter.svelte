@@ -7,7 +7,7 @@
     };
 </script>
 <div>
-    <button on:click={() =>{
+    <button title="A Svelte Component" on:click={() =>{
         increment();
         incrementCounter();
     }}>

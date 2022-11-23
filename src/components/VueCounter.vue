@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="increment(); incrementCounter();">
+        <button title="A Vue Component" @click="increment(); incrementCounter();">
             Vue State: {{count}} Shared State: {{vueSharedCounter}}
         </button>
     </div>

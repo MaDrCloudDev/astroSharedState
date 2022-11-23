@@ -7,7 +7,7 @@ const ReactCounter = () => {
     const reactSharedCounter = useStore(counterStore);
     return (
         <div>
-            <button onClick={() => {
+            <button title="A React Component" onClick={() => {
                 setCount(count + 1)
                 incrementCounter() 
             }}>
