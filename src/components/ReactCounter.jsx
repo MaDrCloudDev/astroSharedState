@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useStore } from "@nanostores/react";
 import { counterStore, incrementCounter } from "../store/counterStore.js";
 
-const CounterReact = () => {
+const ReactCounter = () => {
     const [count, setCount] = useState(0);
     const reactSharedCounter = useStore(counterStore);
     return (
@@ -15,6 +15,6 @@ const CounterReact = () => {
             </button>
         </div>
     );
-}
+};
  
-export default CounterReact;
+export default ReactCounter;

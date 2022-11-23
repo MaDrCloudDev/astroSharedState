@@ -25,5 +25,5 @@ export default {
         const vueSharedCounter = useStore(counterStore);
         return { vueSharedCounter };
     }
-}
+};
 </script>

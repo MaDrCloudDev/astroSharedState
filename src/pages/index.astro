@@ -1,11 +1,11 @@
 ---
-import CounterVue from "../components/CounterVue.vue";
-import CounterReact from "../components/CounterReact";
-import CounterSvelte from "../components/CounterSvelte.svelte";
+import VueCounter from "../components/VueCounter.vue";
+import ReactCounter from "../components/ReactCounter";
+import SvelteCounter from "../components/SvelteCounter.svelte";
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
-    <CounterVue client:visible />
-    <CounterReact client:visible />
-    <CounterSvelte client:visible />
+    <VueCounter client:visible />
+    <ReactCounter client:visible />
+    <SvelteCounter client:visible />
 </Layout>
