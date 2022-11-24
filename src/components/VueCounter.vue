@@ -2,8 +2,10 @@
     <div>
         <button 
         title="A Vue Component" 
-        @click="increment(); incrementCounter();"
-        >
+        @click="
+        increment(); 
+        incrementCounter();
+        ">
             Vue State: {{count}} Shared State: {{vueSharedCounter}}
         </button>
     </div>
@@ -20,8 +22,8 @@ export default {
     },
     methods: {
         increment() {
-            this.count++
-            incrementCounter()
+            this.count++;
+            incrementCounter();
         }
     },
     setup() {

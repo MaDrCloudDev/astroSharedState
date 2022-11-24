@@ -11,8 +11,8 @@ const ReactCounter = () => {
             <button 
             title="A React Component" 
             onClick={() => {
-                setCount(count + 1)
-                incrementCounter() 
+                setCount(count + 1);
+                incrementCounter();
             }}>
                 React State: {count} Shared State: {reactSharedCounter}
             </button>
