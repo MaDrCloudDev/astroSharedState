@@ -5,9 +5,12 @@ import { counterStore, incrementCounter } from "../store/counterStore.js";
 const ReactCounter = () => {
     const [count, setCount] = useState(0);
     const reactSharedCounter = useStore(counterStore);
+    
     return (
         <div>
-            <button title="A React Component" onClick={() => {
+            <button 
+            title="A React Component" 
+            onClick={() => {
                 setCount(count + 1)
                 incrementCounter() 
             }}>

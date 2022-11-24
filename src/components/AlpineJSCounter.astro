@@ -5,8 +5,13 @@ export interface Props {
 
 const { initialCount = 0 } = Astro.props;
 ---
-<div x-data={`{ count: ${initialCount} }`}>
-	<button title="A AlpineJS Component" x-on:click="count++">
+<div 
+x-data={`{ count: ${initialCount} }`}
+>
+	<button 
+    title="A AlpineJS Component" 
+    x-on:click="count++"
+    >
         AlpineJS State: <label x-text="count"></label>
     </button>
 </div>
