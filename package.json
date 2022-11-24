@@ -11,13 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/alpinejs": "^0.1.2",
     "@astrojs/react": "^1.2.2",
     "@astrojs/svelte": "^1.0.2",
     "@astrojs/vue": "^1.2.1",
     "@nanostores/react": "^0.4.0",
     "@nanostores/vue": "^0.6.1",
+    "@types/alpinejs": "^3.7.1",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "alpinejs": "^3.10.5",
     "astro": "^1.6.10",
     "nanostores": "^0.7.1",
     "react": "^18.2.0",

@@ -2,10 +2,12 @@
 import VueCounter from "../components/VueCounter.vue";
 import ReactCounter from "../components/ReactCounter";
 import SvelteCounter from "../components/SvelteCounter.svelte";
+import AlpineJSCounter from "../components/AlpineJSCounter.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
     <VueCounter client:visible />
     <ReactCounter client:visible />
     <SvelteCounter client:visible />
+    <AlpineJSCounter />
 </Layout>
