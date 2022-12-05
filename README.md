@@ -1,4 +1,4 @@
-# [astroSharedState](https://astrosharedstate.netlify.app/)
+# [astroSharedState](https://astrosharedstate.madr.io/)
 Simple React, SolidJS, Svelte, &amp; Vue counter components with state &amp; shared state in Astro
 
 Usage:
