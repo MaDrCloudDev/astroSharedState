@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.1.2",
+    "@astrojs/cloudflare": "^4.1.0",
     "@astrojs/react": "^1.2.2",
     "@astrojs/solid-js": "^1.2.3",
     "@astrojs/svelte": "^1.0.2",
@@ -23,7 +24,7 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "alpinejs": "^3.10.5",
-    "astro": "^1.6.10",
+    "astro": "^1.6.12",
     "nanostores": "^0.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

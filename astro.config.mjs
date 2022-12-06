@@ -6,6 +6,11 @@ import svelte from "@astrojs/svelte";
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
+import cloudflare from "@astrojs/cloudflare";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [alpinejs(), react(), solidJs(), svelte(), vue()]
+  integrations: [alpinejs(), react(), solidJs(), svelte(), vue()],
+  output: "server",
+  adapter: cloudflare()
 });
