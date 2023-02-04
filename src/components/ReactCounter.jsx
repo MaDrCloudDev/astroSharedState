@@ -9,13 +9,14 @@ const ReactCounter = () => {
 	return (
 		<div>
 			<button
-				className='border border-blue-600 rounded-md px-2 my-1'
+				className='border bg-blue-600 rounded-md px-2 my-1'
 				title='A React Component'
 				onClick={() => {
 					setCount(count + 1);
 					incrementCounter();
 				}}>
-				React State: {count} Shared State: {reactSharedCounter}
+				React State: <data class='text-black'>{count}</data> Shared State:{" "}
+				<data class='text-black'>{reactSharedCounter}</data>
 			</button>
 		</div>
 	);

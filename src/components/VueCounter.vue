@@ -1,13 +1,14 @@
 <template>
 	<div>
 		<button
-			class="border border-green-600 rounded-md px-2 my-1"
+			class="border bg-green-600 rounded-md px-2 my-1"
 			title="A Vue Component"
 			@click="
 				increment();
 				incrementCounter();
 			">
-			Vue State: {{ count }} Shared State: {{ vueSharedCounter }}
+			Vue State: <data class="text-black">{{ count }}</data> Shared State:
+			<data class="text-black">{{ vueSharedCounter }}</data>
 		</button>
 	</div>
 </template>

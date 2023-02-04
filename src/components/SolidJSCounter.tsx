@@ -9,13 +9,14 @@ export default function SolidJSCounter() {
 	return (
 		<div>
 			<button
-				class='border border-teal-600 rounded-md px-2 my-1'
+				class='border bg-teal-600 rounded-md px-2 my-1'
 				title='A SolidJS Component'
 				onClick={() => {
 					setCount(count() + 1);
 					incrementCounter();
 				}}>
-				SolidJS State: {count} Shared State: {solidJSSharedCounter}
+				SolidJS State: <data class='text-black'>{count}</data> Shared State:{" "}
+				<data class='text-black'>{solidJSSharedCounter}</data>
 			</button>
 		</div>
 	);

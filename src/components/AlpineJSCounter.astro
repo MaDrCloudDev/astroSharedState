@@ -8,14 +8,12 @@ const { initialCount = 0 } = Astro.props;
 
 <div x-data={`{ count: ${initialCount} }`}>
 	<button
+		class='border bg-yellow-600 rounded-md px-2 my-1'
 		title='A AlpineJS Component'
 		x-on:click='count++'>
-		AlpineJS State: <label x-text='count'></label>
+		AlpineJS State: <data
+			x-text='count'
+			class='text-black'
+		></data>
 	</button>
 </div>
-
-<style>
-	button {
-		@apply border border-yellow-600 rounded-md px-2 my-1;
-	}
-</style>
