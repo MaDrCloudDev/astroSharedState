@@ -4,20 +4,20 @@
     "/*"
   ],
   "exclude": [
-    "/ReactCounter.edd0dff4.js",
-    "/SolidJSCounter.901cb008.js",
-    "/SvelteCounter.e1b24497.js",
-    "/VueCounter.01bc74f1.js",
+    "/ReactCounter.cfd97e6f.js",
+    "/SolidJSCounter.b0d4e2d6.js",
+    "/SvelteCounter.ca6c68e1.js",
+    "/VueCounter.eb610175.js",
     "/_worker.js",
-    "/assets/index.942bb545.css",
-    "/chunks/counterStore.d19fddc7.js",
-    "/chunks/index.684e5623.js",
+    "/assets/index.090c519d.css",
+    "/chunks/counterStore.9db07c7a.js",
+    "/chunks/index.6f4b9552.js",
     "/chunks/runtime-core.esm-bundler.976dee47.js",
-    "/chunks/web.859df647.js",
+    "/chunks/web.b151dcb6.js",
+    "/client.731329e1.js",
     "/client.788af3ea.js",
-    "/client.928c8816.js",
     "/client.9589f30d.js",
-    "/client.c850436b.js",
-    "/page.56e71220.js"
+    "/client.c0c77c80.js",
+    "/page.721c8a4f.js"
   ]
 }

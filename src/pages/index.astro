@@ -1,16 +1,15 @@
 ---
 import AlpineJSCounter from "../components/AlpineJSCounter.astro";
-import SolidJSCounter from "../components/SolidJSCounter";
+import SolidJSCounter from "../components/SolidJSCounter"
 import ReactCounter from "../components/ReactCounter";
 import SvelteCounter from "../components/SvelteCounter.svelte";
 import VueCounter from "../components/VueCounter.vue";
 import Layout from "../layouts/Layout.astro";
 ---
-
 <Layout>
-	<ReactCounter client:visible />
-	<SolidJSCounter client:visible />
-	<SvelteCounter client:visible />
-	<VueCounter client:visible />
-	<AlpineJSCounter />
+    <ReactCounter client:visible />
+    <SolidJSCounter client:visible />
+    <SvelteCounter client:visible />
+    <VueCounter client:visible />
+    <AlpineJSCounter />
 </Layout>

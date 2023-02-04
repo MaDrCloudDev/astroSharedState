@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 import alpinejs from "@astrojs/alpinejs";
 import react from "@astrojs/react";
 import solidJs from "@astrojs/solid-js";
@@ -10,7 +10,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [alpinejs(), react(), solidJs(), svelte(), vue()],
-	output: "server",
-	adapter: cloudflare(),
+  integrations: [alpinejs(), react(), solidJs(), svelte(), vue()],
+  output: "server",
+  adapter: cloudflare()
 });
