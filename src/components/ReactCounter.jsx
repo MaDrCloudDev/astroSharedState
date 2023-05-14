@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { useStore } from "@nanostores/react";
-import { counterStore, incrementCounter } from "../store/counterStore.js";
+import { useState } from 'react';
+import { useStore } from '@nanostores/react';
+import { counterStore, incrementCounter } from '../store/counterStore.js';
 
 const ReactCounter = () => {
 	const [count, setCount] = useState(0);
@@ -15,8 +15,8 @@ const ReactCounter = () => {
 					setCount(count + 1);
 					incrementCounter();
 				}}>
-				React State: <data class='text-black'>{count}</data> Shared State:{" "}
-				<data class='text-black'>{reactSharedCounter}</data>
+				React State: <data class='text-black'>{count}</data> Shared State:{' '}
+				<data className='text-black'>{reactSharedCounter}</data>
 			</button>
 		</div>
 	);
