@@ -1,6 +1,6 @@
 # [astroSharedState](https://astrosharedstate.madr.io/)
 
-Simple React, SolidJS, Svelte, &amp; Vue counter components with state &amp; shared state in Astro 2.0.6. Styled with TailwindCSS. Added an AlpineJS counter for fun.
+Simple React, SolidJS, Svelte, &amp; Vue counter components with state &amp; shared state in Astro 2.8.3. Styled with TailwindCSS. Added an AlpineJS counter for fun.
 
 Usage(bun, npm, yarn, pnpm):
 
