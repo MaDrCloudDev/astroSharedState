@@ -8,9 +8,19 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<ReactCounter client:visible />
-	<SolidJSCounter client:visible />
-	<SvelteCounter client:visible />
-	<VueCounter client:visible />
-	<AlpineJSCounter />
+	<div class='col-span-6'>
+		<ReactCounter client:visible />
+	</div>
+	<div class='col-span-6'>
+		<SolidJSCounter client:visible />
+	</div>
+	<div class='col-span-6'>
+		<SvelteCounter client:visible />
+	</div>
+	<div class='col-span-6'>
+		<VueCounter client:visible />
+	</div>
+	<div class='col-span-12'>
+		<AlpineJSCounter />
+	</div>
 </Layout>
