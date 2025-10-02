@@ -2,7 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "preserve",
-    "jsxImportSource": "react"
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false
   }
 }
-// Astro 2.8.3

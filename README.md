@@ -1,15 +1,43 @@
-# [astroSharedState](https://astrosharedstate.madr.io/)
+# astroSharedState
 
-Simple React, SolidJS, Svelte, &amp; Vue counter components with state &amp; shared state in Astro 2.8.3. Styled with TailwindCSS. Added an AlpineJS counter for fun.
+Multi-framework counter demo built with Astro. Shows how React, SolidJS, Svelte, Vue, and Alpine.js can share state using Nanostores.
 
-Usage(npm, pnpm, bun, yarn):
+## What it does
 
-```
-npm i
+Each framework has its own counter component with local state. All components also share a global counter that updates across frameworks in real-time.
+
+## Tech stack
+
+- **Astro** - Static site generator
+- **Nanostores** - Framework-agnostic state management
+- **Tailwind CSS** - Styling
+- **TypeScript** - Type safety
+
+## Frameworks included
+
+- React (hooks + useStore)
+- SolidJS (signals + createStore)
+- Svelte (stores + reactivity)
+- Vue (composition API)
+- Alpine.js (x-data + reactivity)
+
+## Running locally
+
+```bash
+npm install
 npm run dev
-npm run build
 ```
 
-Feel free to use this as a template if you'd like to weave together multiple frameworks, or if you're incrementally updating your site from one framework to another. For my purposes, it was intended to improve my understanding of state and to learn interoperability in Astro.
+## Structure
 
-Check out the components @ [https://github.com/MaDrCloudDev/astroSharedState/tree/master/src/components](https://github.com/MaDrCloudDev/astroSharedState/tree/master/src/components) if you'd like to compare the relative size and ease of programming these simple counters in each framework. You'll see why Svelte is so popular.
+```
+src/
+├── components/           # Framework counter components
+│   └── ui/              # Reusable UI components
+├── icons/               # SVG icon components
+├── layouts/             # Page layouts
+├── store/               # Nanostores state management
+└── styles/              # CSS files
+```
+
+The app is responsive and optimized for browser zoom up to 120%.

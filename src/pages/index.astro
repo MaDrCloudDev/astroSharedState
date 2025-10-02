@@ -1,26 +1,73 @@
 ---
 import AlpineJSCounter from '../components/AlpineJSCounter.astro';
-import SolidJSCounter from '../components/SolidJSCounter';
-import ReactCounter from '../components/ReactCounter';
+import SolidJSCounter from '../components/SolidJSCounter.tsx';
+import ReactCounter from '../components/ReactCounter.tsx';
 import SvelteCounter from '../components/SvelteCounter.svelte';
 import VueCounter from '../components/VueCounter.vue';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FrameworkCard from '../components/FrameworkCard.astro';
+import ResetButton from '../components/ui/ResetButton.astro';
+import ReactIcon from '../icons/ReactIcon.astro';
+import SolidJSIcon from '../icons/SolidJSIcon.astro';
+import SvelteIcon from '../icons/SvelteIcon.astro';
+import VueIcon from '../icons/VueIcon.astro';
+import AlpineJSIcon from '../icons/AlpineJSIcon.astro';
 ---
 
-<Layout>
-	<div class='col-span-6'>
-		<ReactCounter client:visible />
+<BaseLayout>
+	<div class='space-y-5'>
+		<div class='framework-grid grid grid-cols-1 lg:grid-cols-3 gap-5'>
+			<FrameworkCard
+				title='React'
+				color='text-blue-400'>
+				<ReactIcon
+					class='w-5 h-5 mr-2'
+					slot='icon'
+				/>
+				<ReactCounter client:load />
+			</FrameworkCard>
+
+			<FrameworkCard
+				title='SolidJS'
+				color='text-teal-400'>
+				<SolidJSIcon
+					class='w-5 h-5 mr-2'
+					slot='icon'
+				/>
+				<SolidJSCounter client:load />
+			</FrameworkCard>
+
+			<FrameworkCard
+				title='Svelte'
+				color='text-orange-400'>
+				<SvelteIcon
+					class='w-5 h-5 mr-2'
+					slot='icon'
+				/>
+				<SvelteCounter client:load />
+			</FrameworkCard>
+
+			<FrameworkCard
+				title='Vue'
+				color='text-green-400'>
+				<VueIcon
+					class='w-5 h-5 mr-2'
+					slot='icon'
+				/>
+				<VueCounter client:load />
+			</FrameworkCard>
+
+			<FrameworkCard
+				title='Alpine.js'
+				color='text-yellow-400'>
+				<AlpineJSIcon
+					class='w-5 h-5 mr-2'
+					slot='icon'
+				/>
+				<AlpineJSCounter />
+			</FrameworkCard>
+		</div>
+
+		<ResetButton />
 	</div>
-	<div class='col-span-6'>
-		<SolidJSCounter client:visible />
-	</div>
-	<div class='col-span-6'>
-		<SvelteCounter client:visible />
-	</div>
-	<div class='col-span-6'>
-		<VueCounter client:visible />
-	</div>
-	<div class='col-span-12'>
-		<AlpineJSCounter />
-	</div>
-</Layout>
+</BaseLayout>
