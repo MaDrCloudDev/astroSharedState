@@ -6,21 +6,27 @@ import MaDrIcon from '../../icons/MaDrIcon.astro';
 <header class='text-center mb-5 flex-shrink-0'>
 	<section class='flex flex-col'>
 		<h1
-			class='text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-3'>
-			<AstroIcon class='w-8 h-8 md:w-10 md:h-10 mt-1' />
-			<span class='text-transparent bg-clip-text bg-[#A855F7]'>
+			class='text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-2 md:gap-3'>
+			<AstroIcon
+				class='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 flex-shrink-0 mt-2'
+			/>
+			<span
+				class='text-transparent bg-clip-text bg-[#A855F7] ml-[-0.4rem]'>
 				astroSharedState
 			</span>
 			<a
 				href='https://github.com/madrclouddev'
 				target='_blank'
 				rel='noopener'
-				class='hover:opacity-80 transition-opacity ml-[-10px]'>
-				<MaDrIcon class='w-8 h-8 md:w-10 md:h-10' />
+				class='hover:opacity-80 transition-opacity'>
+				<MaDrIcon
+					class='w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 flex-shrink-0 ml-[-0.4rem]'
+				/>
 			</a>
 		</h1>
 	</section>
-	<p class='text-gray-300 text-lg max-w-6xl mx-auto leading-relaxed'>
+	<p
+		class='text-gray-300 text-xs md:text-base lg:text-lg max-w-6xl mx-auto leading-relaxed'>
 		Experience seamless state sharing between React, SolidJS, Svelte,
 		Vue, and Alpine.js components using <strong
 			class='text-transparent bg-clip-text bg-[#A855F7]'
