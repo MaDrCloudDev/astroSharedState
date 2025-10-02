@@ -6,14 +6,65 @@ export interface Props {
 const { initialCount = 0 } = Astro.props;
 ---
 
-<div x-data={`{ count: ${initialCount} }`}>
-	<button
-		class='border bg-yellow-600 rounded-md px-2 my-1'
-		title='A AlpineJS Component'
-		x-on:click='count++'>
-		AlpineJS State: <data
-			x-text='count'
-			class='text-black'
-		></data>
-	</button>
+<div 
+	x-data="alpineCounter"
+	x-init="init()"
+	class="space-y-3 flex flex-col items-center"
+>
+	<div class="flex gap-2 justify-center">
+		<button
+			class="border border-yellow-500 bg-yellow-600 hover:bg-yellow-700 text-white rounded-md px-3 py-1 transition-colors"
+			title="Increment AlpineJS Counter"
+			@click="increment()"
+			type="button"
+		>
+			+
+		</button>
+		<button
+			class="border border-yellow-500 bg-yellow-600 hover:bg-yellow-700 text-white rounded-md px-3 py-1 transition-colors"
+			title="Decrement AlpineJS Counter"
+			@click="decrement()"
+			type="button"
+		>
+			-
+		</button>
+	</div>
+	<div class="text-sm text-white text-center">
+		<div>Alpine: <span x-text="count" class="font-mono text-yellow-400"></span></div>
+		<div>Shared: <span x-text="sharedCount" class="font-mono text-purple-300"></span></div>
+	</div>
 </div>
+
+<script>
+	import { counterStore, incrementCounter, decrementCounter } from '../store/counterStore';
+	
+	document.addEventListener('alpine:init', () => {
+		Alpine.data('alpineCounter', () => ({
+			count: 0,
+			sharedCount: counterStore.get(),
+			unsubscribe: null,
+			
+			init() {
+				this.unsubscribe = counterStore.subscribe((value) => {
+					this.sharedCount = value;
+				});
+			},
+			
+			increment() {
+				this.count++;
+				incrementCounter();
+			},
+			
+			decrement() {
+				this.count--;
+				decrementCounter();
+			},
+			
+			destroy() {
+				if (this.unsubscribe) {
+					this.unsubscribe();
+				}
+			}
+		}));
+	});
+</script>

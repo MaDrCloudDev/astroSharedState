@@ -1,0 +1,39 @@
+{
+  "folders": [
+    {
+      "name": "Root",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.associations": {
+      "*.astro": "astro"
+    },
+    "emmet.includeLanguages": {
+      "astro": "html"
+    },
+    "tailwindCSS.includeLanguages": {
+      "astro": "html"
+    },
+    "tailwindCSS.experimental.classRegex": [
+      [
+        "class:([^=]+)=",
+        "[\"'`]([^\"'`]*).*?[\"'`]"
+      ]
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "astro-build.astro-vscode",
+      "bradlc.vscode-tailwindcss",
+      "ms-vscode.vscode-typescript-next",
+      "svelte.svelte-vscode",
+      "vue.volar",
+      "solid.solid-js"
+    ]
+  }
+}

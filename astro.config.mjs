@@ -4,11 +4,31 @@ import solidJs from '@astrojs/solid-js';
 import react from '@astrojs/react';
 import svelte from '@astrojs/svelte';
 import vue from '@astrojs/vue';
-
 import alpinejs from '@astrojs/alpinejs';
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind(), solidJs(), react(), svelte(), vue(), alpinejs()],
+	integrations: [
+		tailwind({
+			applyBaseStyles: false,
+		}),
+		react({
+			include: ['**/React*.{tsx,jsx}'],
+		}),
+		solidJs({
+			include: ['**/Solid*.{tsx,jsx}'],
+		}),
+		svelte(),
+		vue(),
+		alpinejs(),
+	],
+	vite: {
+		optimizeDeps: {
+			exclude: [
+				'nanostores',
+				'@nanostores/react',
+				'@nanostores/solid',
+				'@nanostores/vue',
+			],
+		},
+	},
 });
-// 2.8.3
