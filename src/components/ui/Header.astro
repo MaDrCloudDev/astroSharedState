@@ -1,15 +1,25 @@
 ---
 import AstroIcon from '../../icons/AstroIcon.astro';
+import MaDrIcon from '../../icons/MaDrIcon.astro';
 ---
 
 <header class='text-center mb-5 flex-shrink-0'>
-	<h1
-		class='text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-3'>
-		<AstroIcon class='w-8 h-8 md:w-10 md:h-10 mt-2' />
-		<span class='text-transparent bg-clip-text bg-[#A855F7]'>
-			astroSharedState
-		</span>
-	</h1>
+	<section class='flex flex-col'>
+		<h1
+			class='text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-3'>
+			<AstroIcon class='w-8 h-8 md:w-10 md:h-10 mt-1' />
+			<span class='text-transparent bg-clip-text bg-[#A855F7]'>
+				astroSharedState
+			</span>
+			<a
+				href='https://github.com/madrclouddev'
+				target='_blank'
+				rel='noopener'
+				class='hover:opacity-80 transition-opacity ml-[-10px]'>
+				<MaDrIcon class='w-8 h-8 md:w-10 md:h-10' />
+			</a>
+		</h1>
+	</section>
 	<p class='text-gray-300 text-lg max-w-6xl mx-auto leading-relaxed'>
 		Experience seamless state sharing between React, SolidJS, Svelte,
 		Vue, and Alpine.js components using <strong
