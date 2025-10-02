@@ -38,8 +38,16 @@ const ReactCounter: React.FC = () => {
 				</button>
 			</div>
 			<div className='text-sm text-white text-center'>
-				<div>React: <span className='font-mono text-blue-400'>{count}</span></div>
-				<div>Shared: <span className='font-mono text-purple-300'>{reactSharedCounter ?? 0}</span></div>
+				<div>
+					React:{' '}
+					<span className='font-mono text-blue-400'>{count}</span>
+				</div>
+				<div>
+					Shared:{' '}
+					<span className='font-mono text-purple-300'>
+						{reactSharedCounter ?? 0}
+					</span>
+				</div>
 			</div>
 		</div>
 	);

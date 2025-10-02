@@ -1,5 +1,7 @@
 import { atom, computed } from 'nanostores';
 
+export type CounterStatus = 'neutral' | 'positive' | 'negative';
+
 export const counterStore = atom<number>(0);
 export const incrementCounter = (): void => {
 	counterStore.set(counterStore.get() + 1);
@@ -24,7 +26,7 @@ export const isCounterEven = computed(
 
 export const counterStatus = computed(
 	counterStore,
-	(count: number): string => {
+	(count: number): CounterStatus => {
 		if (count === 0) return 'neutral';
 		if (count > 0) return 'positive';
 		return 'negative';
